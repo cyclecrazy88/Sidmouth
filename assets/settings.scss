@@ -1,0 +1,19 @@
+@mixin font_IndieFlower {
+  font-family: 'IndieFlower';
+}
+@mixin font_CormorantGaramond_heading {
+  font-family: 'CormorantGaramond';
+  font-size: 20px;
+}
+@mixin font_IndieFlower_heading {
+  font-family: 'IndieFlower';
+  font-size: 25px;
+}
+@mixin font_IndieFlower_desc {
+  font-family: 'IndieFlower';
+  font-size: 18px;
+}
+@mixin font_Roboto {
+  font-family: 'Roboto';
+}
+

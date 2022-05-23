@@ -1,0 +1,29 @@
+@use "./settings.scss" as setting;
+// Padding Setting
+$padding05:0.5rem;
+$maxSize:100%;
+// Setup the details for the corresponding image
+div.imageDetails{
+  // Image desc, src details
+  div.image_desc,
+  div.imageItem{
+    padding:$padding05;
+    @include setting.font_IndieFlower_desc;
+  }
+  // Display image content details
+  img.imageItem{
+    max-width: $maxSize;
+    max-height: $maxSize;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+
+  div.image_heading{
+    text-align: center;
+    padding-top:$padding05;
+    padding-bottom: $padding05;
+    @include setting.font_IndieFlower_heading;
+    padding:$padding05;
+  }
+
+}

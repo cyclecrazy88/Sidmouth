@@ -1,6 +1,9 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
+  router: {
+    base: '/Sidmouth/'
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -21,6 +24,11 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '~assets/main.scss',
+    '~assets/home.scss',
+    '~assets/heading.scss',
+    '~assets/imageDetail.scss',
+    '~assets/imageMenu.scss',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

@@ -1,0 +1,8 @@
+@use "./settings.scss" as setting;
+div.imageMenu{
+  div.imgTitle, div.imgDesc{
+    width:100%;
+    text-align: center;
+    @include setting.font_CormorantGaramond_heading;
+  }
+}

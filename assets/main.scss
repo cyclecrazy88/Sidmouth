@@ -1,0 +1,19 @@
+@font-face{
+  font-family: "IndieFlower";
+  src:url('~assets/Indie_Flower/IndieFlower-Regular.ttf') format("truetype");
+}
+@font-face{
+  font-family: "CormorantGaramond";
+  src:url('~assets/Cormorant_Garamond/CormorantGaramond-Regular.ttf') format("truetype");
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "Roboto";
+  src:url('~assets/Roboto/Roboto-Regular.ttf') format("truetype");
+  font-style: normal;
+}
+
+body{
+  font-family: "Roboto";
+}
