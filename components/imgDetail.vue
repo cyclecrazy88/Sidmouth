@@ -21,7 +21,7 @@ export default {
   },
 
   async fetch() {
-    console.log("Load Content...");
+    //console.log("Load Content...");
 
     var data = await require(`~/assets/image_details.json`);
     // Image content details

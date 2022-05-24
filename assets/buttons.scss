@@ -1,0 +1,29 @@
+%buttonChangeTransition {
+  transition-property: opacity;
+  transition-duration: 0.33s;
+}
+
+@mixin buttonLink{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  margin-left: 10px;
+
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: 'CormorantGaramond';
+  font-size: 20px;
+  position: relative;
+  top: -1px;
+  background-color: rgb(140, 101, 94, 0.5);
+  border-radius: 20px;
+  border-style:none;
+  cursor:pointer;
+
+  @extend %buttonChangeTransition;
+  &:hover {
+    opacity: 0.5;
+  }
+}

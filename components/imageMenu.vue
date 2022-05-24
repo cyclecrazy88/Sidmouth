@@ -22,7 +22,7 @@ export default {
   },
 
   async fetch(){
-    console.log("Image Menu...");
+    //console.log("Image Menu...");
     // Get display information for the page - control configuration how to load
     //  the page etc.
     const data = await require(`~/assets/image_details.json`)

@@ -1,16 +1,18 @@
-%buttonChangeTransition{
-  transition-property: opacity;
-  transition-duration: 0.33s;
-}
+@use "./settings.scss" as setting;
+@use "./buttons.scss" as button;
+
+
+// Switch between desktop and mobile nav button size.
+$menuNavMinSize:1050px;
 
 nav.heading {
   position: relative;
   background-color: rgb(182, 168, 167, 0.5);
   padding: 1rem;
-  border-radius: 25px;
+  border-radius: 10px;
   color: #5e3735;
   box-shadow: 6px 6px 25px 0px rgb(182 168 167 / 50%);
-  margin-bottom:0.5rem;
+  margin-bottom: 0.5rem;
 
   > span > a {
     font-family: 'CormorantGaramond';
@@ -18,12 +20,21 @@ nav.heading {
     text-decoration: none;
 
     @extend %buttonChangeTransition;
-    &:hover{
+    &:hover {
       opacity: 0.5;
     }
   }
 
+  // Only show these clickable links for Desktop,
+  //  Submenu bar for tablet.
   div.linkButtons {
+    @media (max-width: $menuNavMinSize) {
+      display: none;
+    }
+  }
+
+  // Link buttons at the top of the screen.
+  div.linkButtons, div.mobileMenu {
     //display:inline-block;
     float: right;
 
@@ -31,26 +42,7 @@ nav.heading {
     padding: 5px;
     top: -2px;
     > a {
-      padding-top: 5px;
-      padding-bottom: 5px;
-      padding-left: 20px;
-      padding-right: 20px;
-
-      margin-left:10px;
-
-      text-decoration: none;
-      color: whitesmoke;
-      font-family: 'CormorantGaramond';
-      font-size: 20px;
-      position: relative;
-      top: -1px;
-      background-color: rgb(140, 101, 94, 0.5);
-      border-radius: 20px;
-
-      @extend %buttonChangeTransition;
-      &:hover{
-        opacity: 0.5;
-      }
+      @include button.buttonLink;
     }
   }
 }

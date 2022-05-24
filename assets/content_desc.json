@@ -2,21 +2,25 @@
   {
     "type": "beach",
     "title": "Sidmouth Beach",
+    "title2":"Beach",
     "desc": "Sidmouth beach, has pebbles which is due to them being added in the mid 1990s, prior to this the stones were small shingle stones on the beach. "
   },
   {
     "type": "sidford",
     "title": "Sidford - (Town North)",
+    "title2":"SidFord",
     "desc": "Pictures are from the Sidford area of Sidmouth mainly with the area around the river sid."
   },
   {
     "type": "woolbrook",
     "title": "Woolbrook - (Town North)",
+    "title2":"Woolbrook",
     "desc": "Pictures are from the Woolbreak area of Sidmouth which is at the base of Core hill in the area."
   },
   {
     "type": "town",
     "title": "Sidmouth Town - (Just north from the beach area of Sidmouth)",
+    "title2":"Town",
     "desc": "Pictures are from the Sidmouth Town area of Sidmouth, mainly in the area of the highstreet."
   }
 

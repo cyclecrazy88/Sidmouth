@@ -1,8 +1,40 @@
-@use "./settings.scss" as setting;
-div.imageMenu{
-  div.imgTitle, div.imgDesc{
-    width:100%;
+@use './settings.scss' as setting;
+@use './buttons.scss' as button;
+// Image Menu Styling
+div.imageMenu {
+  div.imgTitle,
+  div.imgDesc {
+    width: 100%;
     text-align: center;
     @include setting.font_CormorantGaramond_heading;
+  }
+}
+
+// Browse menu component
+div.menuBrowse {
+  div.menuItems {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    > button {
+      @include button.buttonLink;
+      margin-bottom: 0.5rem;
+    }
+  }
+  // Picture Listing sub section
+  div.pictureOptions{
+    div.pictureDesc{
+      padding-bottom:2rem;
+      >div{
+        //display:inline-block;
+        text-align: center;
+      }
+      >div.title{
+        @include setting.font_IndieFlower_heading;
+      }
+      >div.desc{
+        @include setting.font_IndieFlower_desc;
+      }
+    }
   }
 }
